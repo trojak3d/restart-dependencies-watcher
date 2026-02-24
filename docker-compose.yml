@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   depends-watcher:
-    image: trojak3d/restart-dependencies-watcher:latest
+    image: ghcr.io/trojak3d/restart-dependencies-watcher:latest
     container_name: restart-dependencies-watcher
     environment:
       WATCH_CONTAINER: "service-to-watch"

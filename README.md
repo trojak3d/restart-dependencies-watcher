@@ -2,7 +2,7 @@
 # restart-dependencies-watcher
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-trojak3d/restart--dependencies--watcher-blue?logo=github)](https://github.com/trojak3d/restart-dependencies-watcher)  
-[![Docker Hub](https://img.shields.io/badge/DockerHub-trojak3d%2Frestart--dependencies--watcher-blue?logo=docker)](https://hub.docker.com/repository/docker/trojak3d/restart-dependencies-watcher)
+[![GHCR](https://img.shields.io/badge/GHCR-ghcr.io%2Ftrojak3d%2Frestart--dependencies--watcher-blue?logo=github)](https://ghcr.io/trojak3d/restart-dependencies-watcher)
 
 A lightweight, event-driven Docker helper container that monitors a specific container for restart events and automatically restarts dependent containers marked with a specific label. Useful for coordinating service restarts inside any Docker environment.
 
@@ -42,7 +42,7 @@ Environment variables:
 
 ```yaml
 depends-watcher:
-  image: trojak3d/restart-dependencies-watcher:latest
+  image: ghcr.io/trojak3d/restart-dependencies-watcher:latest
   container_name: restart-dependencies-watcher
   environment:
     WATCH_CONTAINER: "service-to-watch"
